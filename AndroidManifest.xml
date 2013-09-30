@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aurionx.wallet"
+    android:versionCode="2"
+    android:versionName="1.01" 
+    android:installLocation="auto">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <application
+        android:allowBackup="true"
+        android:debuggable="false"
+        android:name="GlobalState"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        
+        <receiver
+            android:name="com.ripple.NetworkState"
+            android:label="NetworkState" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        
+        <activity
+            android:name="com.aurionx.wallet.MainActivity"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="PinActivity" android:theme="@android:style/Theme.Holo.NoActionBar"></activity>
+        <activity android:name="LoginActivity" android:theme="@android:style/Theme.Holo.NoActionBar"></activity>
+        <activity android:name="WalletActivity" ></activity>
+        <activity android:name="SettingsActivity" ></activity>
+    </application>
+
+</manifest>

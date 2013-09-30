@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context=".WalletActivity" >
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="ripple address"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textColor="#27e" 
+        android:padding="3dip" />
+
+    <ListView
+        android:id="@+id/balances"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/address" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/balanceMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/balances"
+        android:gravity="center"
+        android:padding="3dip"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#922"
+        android:textSize="16sp" />
+
+</RelativeLayout>

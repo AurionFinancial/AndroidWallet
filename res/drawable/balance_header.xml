@@ -1,0 +1,60 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#55FFFFFF" />
+        </shape>
+    </item>
+    <item android:bottom="1.5dip">
+		<shape android:shape="rectangle" >
+		   <solid android:color="#333333"/>
+		   <stroke android:width="1dip" android:color="#000000"/>
+		</shape>        
+    </item>
+    <!-- over right shadow -->
+    <item android:bottom="1.5dip">
+        <shape android:shape="rectangle" >
+            <gradient
+                android:angle="360"
+                android:centerColor="#00222222"
+                android:centerX="0.2"
+                android:endColor="#00222222"
+                android:startColor="#FF111111" />
+        </shape>
+    </item>    
+    <!-- over left shadow -->
+    <item android:bottom="1.5dip">
+        <shape android:shape="rectangle" >
+            <gradient
+                android:angle="180"
+                android:centerColor="#00222222"
+                android:centerX="0.2"
+                android:endColor="#00222222"
+                android:startColor="#FF111111" />
+        </shape>
+    </item>
+    <!-- over top shadow -->
+    <item android:bottom="1.5dip">
+        <shape android:shape="rectangle" >
+            <gradient
+                android:angle="-90"
+                android:centerColor="#00222222"
+                android:centerY="0.8"
+                android:endColor="#00222222"
+                android:startColor="#FF111111"
+                android:type="linear" />
+        </shape>
+    </item>    
+    <!-- over bottom shadow -->
+    <item android:bottom="1.5dip">
+        <shape android:shape="rectangle" >
+            <gradient
+                android:angle="90"
+                android:centerColor="#00222222"
+                android:centerY="0.8"
+                android:endColor="#00222222"
+                android:startColor="#FF111111"
+                android:type="linear" />
+        </shape>
+    </item>
+
+</layer-list>

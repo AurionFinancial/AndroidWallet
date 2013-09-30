@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ripple Balances</string>
+    <string name="action_settings">Settings</string>
+	<string name="walletName">WALLET NAME</string>
+	<string name="passphrase">PASSPHRASE</string>
+	<string name="signIn">sign in</string>
+	<string name="payward">https://blobvault.payward.com</string>
+</resources>

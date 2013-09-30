@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/wm_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/walletName"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/walletName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/wm_label"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/wm_label"
+        android:ems="10"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/pp_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/passphrase"
+        android:layout_below="@+id/walletName"
+        android:layout_marginTop="24dp"
+        android:text="@string/passphrase"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+        
+    <EditText
+        android:id="@+id/passphrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/walletName"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pp_label"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/passphrase"
+        android:layout_alignRight="@+id/passphrase"
+        android:layout_below="@+id/passphrase"
+        android:layout_marginTop="28dp"
+        android:text="@string/signIn" />
+
+	<TextView
+	    android:id="@+id/loginMessage"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/signIn"
+	    android:layout_alignRight="@+id/signIn"
+	    android:layout_below="@+id/signIn"
+	    android:layout_marginTop="10dp"
+	    android:gravity="center"
+	    android:textColor="#3355cc"
+	    android:textSize="16sp" />
+
+</RelativeLayout>
